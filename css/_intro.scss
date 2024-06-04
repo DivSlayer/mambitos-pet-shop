@@ -1,0 +1,132 @@
+@import "./funcs";
+.intro {
+    padding: 30px 5%;
+    padding-bottom: 70px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    background-color: $brownColor;
+    .image-holder {
+        flex: 3;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        border-radius: 47% 32% 47% 27%;
+        background-color: $bgColor;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../components/images/dogs-party.jpg");
+        border: 5px solid $bgColor;
+        position: relative;
+        .dog-img {
+            position: absolute;
+            bottom: -30px;
+            height: 170px;
+            right: 0;
+        }
+    }
+    .content {
+        flex: 6;
+        .colored-circle {
+            position: absolute;
+            &.cl-1 {
+                top: 50px;
+                left: 50px;
+                background-color: $pinkColor;
+            }
+            &.cl-2 {
+                top: 80px;
+                right: 20px;
+                width: 70px;
+                height: 70px;
+                background-color: $yellowColor;
+            }
+        }
+        .content-holder {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 100px 0;
+            .title {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                h3 {
+                    @include fontSize(50);
+                    font-weight: 800;
+                    color: $whiteColor;
+                    text-align: center;
+                }
+                span {
+                    @include fontSize(30);
+                    font-weight: 800;
+                    color: $pinkColor;
+                }
+                p {
+                    @include fontSize(18);
+                    font-weight: 400;
+                    margin-top: 50px;
+                }
+            }
+            .funcs {
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .help-text {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+// Responsive
+
+@media screen and (max-width: 900px) {
+    .intro {
+        .content {
+            flex: 4;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .intro {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 0;
+        .content {
+            flex: unset;
+            width: 100%;
+        }
+        .image-holder {
+            flex: unset;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .intro {
+        .content {
+            .content-holder {
+                .title {
+                    h3 {
+                        @include fontSize(40);
+                    }
+                    span{
+                        @include fontSize(25);
+                    }
+                }
+            }
+        }
+        .image-holder {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "files",
+        "kind": 5,
+        "importPath": "components.fonts.Dana.main",
+        "description": "components.fonts.Dana.main",
+        "peekOfCode": "files = os.listdir(\"components/fonts/Dana\")\nall_fonts = []\nfor file in files:\n    all_fonts.append(file.split('.')[0])\nprint(\", \".join(all_fonts))",
+        "detail": "components.fonts.Dana.main",
+        "documentation": {}
+    },
+    {
+        "label": "all_fonts",
+        "kind": 5,
+        "importPath": "components.fonts.Dana.main",
+        "description": "components.fonts.Dana.main",
+        "peekOfCode": "all_fonts = []\nfor file in files:\n    all_fonts.append(file.split('.')[0])\nprint(\", \".join(all_fonts))",
+        "detail": "components.fonts.Dana.main",
+        "documentation": {}
+    }
+]

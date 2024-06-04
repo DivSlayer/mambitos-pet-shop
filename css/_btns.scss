@@ -1,0 +1,22 @@
+.btn {
+    border-radius: 40px;
+    padding: 12px 30px;
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+    cursor: pointer;
+    @include fontSize(16);
+    &.btn-bg {
+        background-color: $bgColor;
+        &:hover {
+            background-color: $pinkColor;
+            color: $whiteColor;
+        }
+    }
+    &.btn-yellow {
+        background-color: $yellowColor;
+        &:hover {
+            background-color: $brownColor;
+        }
+    }
+}
