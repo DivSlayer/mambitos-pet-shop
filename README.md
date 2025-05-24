@@ -5,11 +5,13 @@
 <h1>Mambitos</h1>
 </div>
 
+دموی زنده: [Live Demo](https://divslayer.github.io/mambitos-pet-shop)
+
 <div style="text-align: right;direction:rtl;">
 <p>این یک قالب ساده HTML برای مراکز نگهداری حیوانات میباشد.</p>
 </div>
 
-ساخته شده توسط: [Geeksloths](https://geeksloths.github.io)
+ساخته شده توسط: [DivSlayer](https://divslayer.github.io)
 
 
 ## ساخته شده با استفاده از 🛠
